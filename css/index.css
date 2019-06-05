@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -133,6 +136,21 @@ table {
 html,
 body {
   height: 100%;
+}
+.font-midclass {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+}
+.font-lgclass {
+  font-size: 2rem;
+}
+.button-style {
+  background-color: grey;
+}
+.button-box {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  background-color: grey;
 }
 .container {
   display: flex;
