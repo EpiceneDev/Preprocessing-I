@@ -57,7 +57,31 @@ html, body {
     height: 100%;
 }
 
-@override: #ff0000;
-body {
-	background-color: @override;
+@background: rgb(176, 187, 250);
+@tablet-background: rgb(150, 203, 219);
+@phone-background: rgb(218, 217, 193);
+
+.container {
+	display: flex;
+	width: 100%;
+	background-color: @background;
+
+	@media screen (max-width: 800px) {
+		background-color: @tablet-background;
+	}
+
+	@media screen (max-width: 500px) {
+		background-color: @phone-background;
+	}
+}
+
+.top-nav {
+	display: flex;
+	justify-content: center;
+	align-items: space-between;
+
+}
+
+.identity {
+
 }

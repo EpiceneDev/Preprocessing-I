@@ -134,6 +134,23 @@ html,
 body {
   height: 100%;
 }
-body {
-  background-color: #ff0000;
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #b0bbfa;
+}
+@media screen (max-width: 800px) {
+  .container {
+    background-color: #96cbdb;
+  }
+}
+@media screen (max-width: 500px) {
+  .container {
+    background-color: #dad9c1;
+  }
+}
+.top-nav {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
 }
