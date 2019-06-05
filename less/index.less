@@ -57,9 +57,31 @@ html, body {
     height: 100%;
 }
 
+@button-color: grey;
+
 @background: rgb(176, 187, 250);
 @tablet-background: rgb(150, 203, 219);
 @phone-background: rgb(218, 217, 193);
+
+.font-midclass {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+
+}
+
+.font-lgclass {
+	font-size: 2rem;
+}
+
+.button-style {
+	background-color: @button-color;
+
+}
+
+.button-box {
+	.font-midclass();
+	.button-style();
+}
 
 .container {
 	display: flex;
