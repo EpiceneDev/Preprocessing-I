@@ -48,6 +48,10 @@ table {
 	border-spacing: 0;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -57,3 +61,53 @@ html, body {
     height: 100%;
 }
 
+@button-color: grey;
+
+@background: rgb(176, 187, 250);
+@tablet-background: rgb(150, 203, 219);
+@phone-background: rgb(218, 217, 193);
+
+.font-midclass {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+
+}
+
+.font-lgclass {
+	font-size: 2rem;
+}
+
+.button-style {
+	background-color: @button-color;
+
+}
+
+.button-box {
+	.font-midclass();
+	.button-style();
+}
+
+.container {
+	display: flex;
+	width: 100%;
+	background-color: @background;
+
+	@media screen (max-width: 800px) {
+		background-color: @tablet-background;
+	}
+
+	@media screen (max-width: 500px) {
+		background-color: @phone-background;
+	}
+}
+
+.top-nav {
+	display: flex;
+	justify-content: center;
+	align-items: space-between;
+
+}
+
+.identity {
+
+}
